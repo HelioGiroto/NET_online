@@ -3,6 +3,9 @@
 ###################################################
 ##  ASSIM QUE (O SINAL D)A INTERNET VOLTA        ## 
 ##      O ARQ. MP3 BEEP.MP3 TOCARÁ               ##
+##                                               ##         
+## Quando volte a Internet, tocará o despertador ##
+##                                               ##               
 ##   RENOMEIE ALGUM ARQ DA SUA PREFERÊNCIA       ##
 ##              PARA beep.mp3                    ##
 ##                                               ##
@@ -17,7 +20,4 @@ do
   sleep 3
 done
 
-
-
-
-# Autor: Helio Giroto
+#                                                                     Autor: Helio Giroto
