@@ -20,4 +20,5 @@ do
   sleep 3
 done
 
-#                                                                     Autor: Helio Giroto
+# Autor: Helio Giroto
+# Made with a Raspberry Pi - https://www.facebook.com/RPi.br/
