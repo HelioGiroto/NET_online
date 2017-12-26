@@ -2,7 +2,7 @@
 App que avisa quando a internet voltou a funcionar...
 
 Chegamos em casa e notamos que o sinal da internet saiu do ar!!! Ufff...... Não tinha previsão de quando ele ia voltar!
-Então fizemos um pequeno programinha em Shell Script para que o próprio computador me avisasse QUANDO A INTERNET VOLTASSE!
+Então fizemos um pequeno programinha em Shell Script para que O PRÓPRIO COMPUTADOR ME AVISASSE QUANDO A INTERNET VOLTASSE!
 
 Bom, não foi difícil, e o programa funcionou de maneira perfeita!! (Tanto que publico aqui para quem quiser usá-lo!).
 
