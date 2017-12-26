@@ -17,6 +17,10 @@ while :
 do 
   ping -c 1 www.google.com &> /dev/null 
   [ $? -eq 0 ] && cvlc --play-and-exit beep.mp3 || echo NADA
+  
+  # NO MAC substitua a linha acima por esta abaixo:
+  # [ $? -eq 0 ] && afplay beep.mp3 || echo NADA
+  
   sleep 3
 done
 
