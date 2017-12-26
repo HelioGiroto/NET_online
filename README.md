@@ -21,4 +21,5 @@ Se quiser testar para ver como funciona sem precisar baizá-lo basta digitar ess
     curl https://raw.githubusercontent.com/HelioGiroto/NET_online/master/NET_online.sh | bash
 
 Autor: Hélio Giroto
+
 [Sob licença MIT de copyright](https://raw.githubusercontent.com/HelioGiroto/NET_online/master/LICENSE)
