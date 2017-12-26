@@ -8,7 +8,7 @@ Bom, não foi difícil, e o programa funcionou de maneira perfeita!! (Tanto que 
 
 OBS.: Funciona somente em LINUX e MAC. 
 
-Baixe o script nesse [link]() e em seguida digite no seu Terminal:
+Baixe o script nesse [link](https://github.com/HelioGiroto/NET_online/archive/master.zip) e em seguida digite no seu Terminal:
 
 ### bash NET_online.sh ###
 
