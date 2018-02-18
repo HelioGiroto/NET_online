@@ -20,7 +20,11 @@ do
   
   # NO MAC substitua a linha acima por esta abaixo:
   # [ $? -eq 0 ] && afplay beep.mp3 || echo NADA
-  
+
+  # No Raspberry Pi, use:
+  # [ $? -eq 0 ] && omxplayer beep.mp3 || echo NADA
+
+
   sleep 3
 done
 
