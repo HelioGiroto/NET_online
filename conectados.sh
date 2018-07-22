@@ -1,11 +1,11 @@
 #!/bin/bash
+# ESTE SCRIPT FARÁ QUE SE TOQUE UM BEEP QUANDO ALGUÉM MAIS ACESSAR A SUA INTERNET:
+
+# Requer estes pacotes instalados:
+# sudo apt-get install -y nmap hostname omxplayer
 
 ips=$(hostname -I)
-
 sliceIp=$(echo $ips | cut -d'.' -f 1,2,3)
- 
-# nmap -sP $sliceIp.*
-
 echo "Conectados agora: "
 nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' 
 
@@ -18,7 +18,7 @@ do
 	if [ $qtosAgora -gt $qtosAnterior ]	
 	then
 		echo; echo "Um novo usuário se conectou na sua Rede!!!"
-		aplay beep.mp3
+		omxplayer beep.mp3			# Baixe em https://www.soundjay.com/beep-sounds-1.html
 		nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' 
 		echo
 	fi
