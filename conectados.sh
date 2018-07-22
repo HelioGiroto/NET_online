@@ -1,12 +1,27 @@
 #!/bin/bash
 
-# Descobre o nro de ip da rede local:
 ips=$(hostname -I)
 
-# Fatia apenas a parte necessária para varrer...:
 sliceIp=$(echo $ips | cut -d'.' -f 1,2,3)
+ 
+# nmap -sP $sliceIp.*
 
-# Procura quem está conectado na sua rede:   
-nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//'
+echo "Conectados agora: "
+nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' 
+
+# Watching your Net:
+while :
+do
+	qtosAnterior=$(nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' | wc -l)
+	sleep 1m
+	qtosAgora=$(nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' | wc -l)
+	if [ $qtosAgora -gt $qtosAnterior ]	
+	then
+		echo; echo "Um novo usuário se conectou na sua Rede!!!"
+		aplay beep.mp3
+		nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' 
+		echo
+	fi
+done
 
 # Autor: Helio Giroto
