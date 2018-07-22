@@ -13,7 +13,7 @@ nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d'
 while :
 do
 	qtosAnterior=$(nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' | wc -l)
-	sleep 5m
+	sleep 5m	# 5m = 5 minutos. Pode ser alterado esse tempo...
 	qtosAgora=$(nmap -sP $sliceIp.* | grep report | sed 's/Nmap scan report for//; 1d' | wc -l)
 	if [ $qtosAgora -gt $qtosAnterior ]	
 	then
