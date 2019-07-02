@@ -1,5 +1,5 @@
 # NET_online
-App que avisa quando a internet voltou a funcionar...
+App que avisa quando a internet voltou a funcionar... 
 
 Chegamos em casa e notamos que o sinal da internet saiu do ar!!! Ufff...... Não tinha previsão de quando ele ia voltar!
 Então fizemos um pequeno programinha em Shell Script para que O PRÓPRIO COMPUTADOR ME AVISASSE QUANDO A INTERNET VOLTASSE!
